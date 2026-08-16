@@ -1,0 +1,693 @@
+NEW ROADMAP TWOHEART
+NEW ROADMAP
+TWOHEARTS V1 — MASTER MAJOR UI SCREEN ROADMAP
+================================================
+SOURCE OF TRUTH
+---------------
+PRODUCT ARCHITECTURE:
+The original 90 major screens supplied by the user.
+VISUAL PROGRESS:
+The uploaded Canva PDF containing the existing completed pages,
+plus any additional Canva screens explicitly created afterward.
+RULE:
+The original 90-screen architecture defines WHAT features/
+screens must eventually exist.
+The Canva document defines WHAT has already been visually
+designed.
+DO NOT CREATE REDUNDANT SCREENS.
+If an existing Canva page already covers a major screen,
+mark that major screen as COMPLETE even if the Canva page
+number does not match the original major-screen number.
+If a Canva page represents an additional game-specific screen
+that is not one of the original 90 major screens, keep it as
+completed work but do not count it twice toward the 90.
+IMPORTANT:
+The physical Canva page number and the original major-screen
+number are TWO DIFFERENT THINGS.
+Future requests will always include:
+"Slide [Canva page number] — [exact screen title]"
+The TITLE is authoritative for what should be designed.
+The CANVA SLIDE NUMBER is authoritative for where the design
+belongs in the Canva file.
+NEVER assume the next screen from the number alone.
+================================================
+FOUNDATION
+================================================
+01 ✓ — Splash Screen
+     COVERED BY CANVA PDF — PAGE 1
+02 ✓ — Welcome / First Launch
+     COVERED BY CANVA PDF — EARLY ONBOARDING PAGES
+03 ✓ — Profile Setup
+     COVERED BY CANVA PDF — PROFILE SETUP
+04 ✓ — Relationship Setup
+     COVERED BY CANVA PDF — SPECIAL SOMEONE /
+     RELATIONSHIP SETUP
+05 ✓ — Personalization Setup
+     COVERED BY CANVA PDF — PERSONALIZATION / SETUP FLOW
+06 ✓ — App Lock Setup
+     DESIGNED AS A DEDICATED SCREEN
+07 ✓ — Setup Complete
+     DESIGNED AS A DEDICATED SCREEN
+================================================
+MAIN NAVIGATION
+================================================
+08 ✓ — Home Dashboard
+     COVERED BY CANVA PDF — HOME SCREEN
+09 ✓ — Us / Relationship Hub
+     DESIGNED AS A DEDICATED SCREEN
+10 ✓ — Games Hub
+     COVERED BY CANVA PDF — MINI GAMES HUB
+11 ✓ — Notes Hub
+     COVERED BY CANVA PDF — NOTES HOME
+12 ✓ — More Menu
+     DESIGNED AS A DEDICATED SCREEN
+================================================
+HOME / RELATIONSHIP
+================================================
+13 ✓ — Home Dashboard — Full Content
+     COVERED BY CANVA PDF — UPDATED HOME DESIGN
+14 ✓ — Relationship Counter
+     DESIGNED AS A DEDICATED SCREEN
+15 ☐ — Anniversary / Important Dates
+     PARTIALLY/CONCEPTUALLY COVERED BY EXISTING
+     HOME/ONBOARDING DESIGN.
+     DEDICATED SCREEN STILL NEEDED.
+================================================
+MEMORIES
+================================================
+16 ✓ — Memories Home
+     COVERED BY CANVA PDF
+17 ✓ — Add Memory
+     COVERED BY CANVA PDF
+18 ✓ — Memory Details
+     COVERED BY CANVA PDF
+================================================
+NOTES
+================================================
+19 ✓ — Notes Home
+     COVERED BY CANVA PDF
+20 ✓ — Note Editor
+     COVERED BY CANVA PDF
+21 ✓ — Individual Note
+     COVERED BY CANVA PDF
+================================================
+TIMELINE
+================================================
+22 ✓ — Timeline Home
+     DESIGNED AS A DEDICATED SCREEN
+23 ✓ — Add Timeline Event
+     DESIGNED AS A DEDICATED SCREEN
+24 ✓ — Timeline Event Details
+     DESIGNED AS A DEDICATED SCREEN
+================================================
+SURPRISE BOX
+================================================
+25 — REMOVED / DEFERRED FROM V1
+     Surprise Box Home
+26 — REMOVED / DEFERRED FROM V1
+     Create Surprise
+27 — REMOVED / DEFERRED FROM V1
+     Open Surprise / Reveal
+REASON FOR REMOVAL:
+-------------------
+Surprise Box is intentionally deferred from the current
+offline-first V1 scope.
+Its core purpose depends on a mechanism for one person's
+surprise to reach the other person's device.
+The feature may return in a future online/synchronization
+version of TwoHearts.
+IMPORTANT:
+DO NOT DESIGN 25–27 FOR CURRENT V1.
+DO NOT COUNT 25–27 AS INCOMPLETE V1 WORK.
+DO NOT RENUMBER THE ORIGINAL ARCHITECTURE.
+The original numbering remains intact so the roadmap stays
+stable and traceable.
+================================================
+MINI-GAMES
+================================================
+28 ✓ — Games Home
+     COVERED BY CANVA PDF — PAGE 17
+29 ✅ — Games Category
+30 ✅ — Game Instructions
+31 ✓ — Game Gameplay — Primary Template
+     COVERED BY MULTIPLE EXISTING GAMEPLAY SCREENS
+32 ✅ — Game Results
+33 ✅ — Game Statistics / Achievements
+================================================
+COUPLE GAMES
+================================================
+34 ✓ — Who Knows Who Better
+     EXISTING CANVA COUPLE-TRIVIA SCREEN COVERS THIS
+     FUNCTIONAL CONCEPT
+35 ✓ — Guess My Answer
+     EXISTING COUPLE-GAME DESIGN CONCEPT COVERS THIS
+     FUNCTIONAL CATEGORY.
+     DEDICATED SCREEN MAY STILL BE CREATED IF NEEDED,
+     BUT DO NOT DUPLICATE EXISTING COVERAGE UNNECESSARILY.
+36 ✓ — Would You Rather
+     COVERED BY CANVA PDF
+37 ✓ — Couple Trivia
+     COVERED BY CANVA PDF
+38 ✓ — This or That
+     COVERED BY CANVA PDF
+39 ☐ — How Well Do You Remember
+40 ✓ — Finish My Sentence
+     EXISTING MINI-GAME HUB CONTAINS THIS GAME CONCEPT.
+     DEDICATED GAMEPLAY SCREEN STILL NEEDED IF REQUIRED.
+41 ☐ — Who Would Most Likely
+42 ☐ — Guess the Memory
+43 ☐ — Relationship Bingo
+================================================
+FUN GAMES
+================================================
+44 ☐ — Would You Survive
+45 ☐ — Choose Your Fate
+46 ☐ — Impossible Choices
+47 ✓ — Truth or Dare
+     GAME CONCEPT IS PRESENT IN THE EXISTING MINI-GAME
+     SYSTEM / GAME ARCHITECTURE
+48 ✓ — Emoji Guess
+     COVERED BY CANVA PDF
+49 ☐ — Word Chain
+50 ✓ — 20 Questions
+     COVERED BY CANVA PDF
+51 ✓ — Guess the Word
+     COVERED BY CANVA PDF
+52 ✓ — Memory Match
+     COVERED BY CANVA PDF — PAGE 28
+53 ✓ — Reaction Challenge
+     GAME CATEGORY / GAME SYSTEM COVERAGE EXISTS.
+     DEDICATED SCREEN STILL NEEDED IF REQUIRED.
+================================================
+BRAIN / REPLAYABLE GAMES
+================================================
+54 ☐ — Daily Question
+55 ☐ — Daily Challenge
+56 ✓ — Word Scramble
+     COVERED BY CANVA PDF
+57 ✓ — Trivia
+     COVERED BY CANVA PDF
+58 ☐ — Guess the Number
+59 ☐ — Higher or Lower
+60 ✓ — Riddle Room
+     COVERED BY CANVA PDF AS "RIDDLE ME THIS"
+61 ✓ — Story Builder
+     GAME CONCEPT PRESENT IN EXISTING MINI-GAMES HUB
+62 ☐ — Would You Rather — Chaos
+63 ☐ — Lucky Box
+================================================
+OUR PLACES
+================================================
+64 ✅ (slide 48 on canva) — Our Places Home
+65 ✅ (slide 49 on canva) — Add Place
+66 ✅ (slide 50 on canva) — Place Details
+================================================
+MOOD
+================================================
+67 ✅ (slide 51on canva) — Mood Home
+68 ✅ (slide 52 on canva) — Mood Selection
+69 ✅ (slide 53 on canva) — Mood History
+===========================================================
+PERIOD TRACKER — OFFLINE V1
+CORE RULE
+The Period Tracker does NOT require:
+Internet connection
+Cloud synchronization
+Online account services
+Server-side cycle calculations
+Online fertility services
+Online health databases
+Online partner synchronization
+Push notifications from a server
+External calendar services
+Online data sharing
+All tracking data is stored locally on the device.
+============================================================
+PERIOD TRACKER
+54 — Period Tracker Home
+     Main offline overview:
+Current cycle day
+Current cycle status
+Estimated next period
+Cycle progress
+Quick "Log Period" action
+Recent tracking information
+Local reminder status
+55 — Period Calendar
+     Offline monthly calendar showing:
+Logged period days
+Current day
+Previous periods
+Estimated upcoming period
+Optional estimated fertile window
+Month navigation
+56 — Log Period
+     Record locally:
+Period start
+Period end
+Flow level
+Optional note
+57 — Cycle Details
+     Show locally calculated:
+Cycle start date
+Current cycle day
+Cycle length
+Period duration
+Previous cycle information
+Estimated next period
+58 — Cycle History
+     Display locally stored:
+Previous cycles
+Period dates
+Cycle lengths
+Period durations
+Simple historical trends
+59 — Period Tracker Settings
+     Local configuration:
+Typical cycle length
+Typical period length
+Prediction preferences
+Tracking preferences
+First-day-of-period behavior
+Privacy preferences
+60 — Period Reminders
+     DEVICE-LOCAL reminders only:
+Expected period reminder
+Tracking reminder
+Custom reminder
+Reminder timing
+     No server or cloud notification system.
+61 — Period Tracker Privacy
+     Local privacy controls:
+Keep tracker private
+Partner visibility
+What information is shared
+Hide sensitive details
+Local-only mode
+— Partner View (not added in v1)
+     OPTIONAL LOCAL COUPLE VIEW.
+     If both people use the same locally available
+     TwoHearts relationship data, show only information
+     explicitly allowed by the person tracking.
+     Examples:
+     "Period expected soon"
+     "Period started"
+     Do NOT automatically expose:
+symptoms
+private notes
+cycle history
+sensitive details
+62 — Period Tracker First-Time Setup
+     First-use setup stored locally:
+Last period date
+Typical cycle length
+Typical period duration
+Tracking preferences
+Privacy preference
+============================================================
+OPTIONAL FUTURE V1 SCREENS
+63 — Fertile Window View
+     Local ESTIMATE only.
+64 — Period Tracker Insights
+     Local calculations based only on recorded data.
+65 — Export Period Data
+     Export the user's locally stored information.
+     No cloud upload required.
+============================================================
+IMPORTANT CALCULATION RULE
+All calculations happen ON DEVICE.
+For example:
+LAST PERIOD
++
+AVERAGE RECORDED CYCLE LENGTH
+=
+ESTIMATED NEXT PERIOD
+The app must clearly label these as:
+"Estimated"
+and NOT guaranteed.
+Cycle predictions can change as more information is logged.
+============================================================
+PRIVACY RULE
+Period Tracker information is sensitive.
+Default behavior:
+PRIVATE.
+Nothing should be automatically published, uploaded,
+shared, or synchronized online.
+Partner visibility must be an explicit user-controlled
+choice.
+============================================================
+OFFLINE REMINDER RULE
+Reminders use the DEVICE'S LOCAL notification/reminder
+system.
+They do NOT require:
+Firebase
+Supabase
+a backend
+push notification servers
+internet access
+============================================================
+V1 ARCHITECTURE
+TwoHearts V1 remains:
+OFFLINE-FIRST
+LOCAL DATA
+LOCAL CALCULATIONS
+LOCAL REMINDERS
+PRIVATE BY DEFAULT
+No backend is required for the Period Tracker.
+============================================================
+ONLINE FEATURES REMOVED
+REMOVE:
+✗ Cloud cycle synchronization
+✗ Online partner synchronization
+✗ Cloud health services
+✗ Online fertility calculations
+✗ Online medical information
+✗ Server notifications
+✗ Public sharing
+✗ Online profiles
+✗ External calendar synchronization
+✗ Cloud-based analytics
+✗ Online backup requirements
+============================================================
+PRODUCT DIRECTION
+The Period Tracker should feel like a private feature built
+into TwoHearts—not a separate online health platform.
+Everything essential works without an internet connection.
+If TwoHearts eventually gets a backend in a future version,
+online synchronization can be added later without redesigning
+the fundamental UI.
+================================================
+OPEN WHEN (partially remove in v1 since v1 is complete offline)
+================================================
+70 ☐ — Open When Home
+71 ☐ — Create Open When
+72 ☐ — Open When Reveal
+================================================
+REMINDERS
+================================================
+73 ✓ — Reminders Home
+     COVERED BY CANVA PDF
+74 ✓ — Create Reminder
+     COVERED BY CANVA PDF
+75 ✓ — Reminder Details
+     COVERED BY CANVA PDF
+================================================
+PRIVATE VAULT
+================================================
+76 ✅ (slide 63 on canva) — Vault Locked
+77 ✅ (slide 64 on canva)— Vault Home
+78 ✅ (slide 65 on canva) — Add Vault Content
+79 ✅ (slide 66 on canva)— Vault Content Viewer
+================================================
+SETTINGS
+================================================
+80 ✅ (slide 67 on canva)— Settings Home
+81 ✅ (slide 68 on canva) — Profile Settings
+82 ✅ (slide 69 on canva)— Relationship Settings
+83 ✅ (slide 70 on canva)— Appearance Settings
+84 ✅ (slide 71 on canva) — Notification Settings
+85 ✅ (slide 72 on canva)— Security / App Lock Settings
+86 ✅ (slide 73 on canva) — Storage Settings
+87 ✅ (slide 74 on canva) — About TwoHearts
+================================================
+SEARCH
+================================================
+88 ✅ (slide 75 on canva) — Global Search
+89 ✅ (slide 76 on canva)— Search Results
+================================================
+NOTIFICATION CENTER
+================================================
+90 ✅ (slide 77 on canva) -Notification Center
+================================================
+CURRENT CANVA PDF — 35 ORIGINAL PAGES
+================================================
+These are the actual pages already present in the uploaded
+Canva export.
+THESE PAGES ARE NOT TO BE RECREATED.
+01 ✓ — Splash / Welcome
+02 ✓ — Welcome / Onboarding
+03 ✓ — Profile Setup
+04 ✓ — Special Someone Profile
+05 ✓ — Relationship / Connection Setup
+06 ✓ — Important Date / Beginning Setup
+07 ✓ — Home Dashboard
+08 ✓ — Memories Home
+09 ✓ — Memory Details
+10 ✓ — Add Memory
+11 ✓ — Notes Home
+12 ✓ — Note Editor
+13 ✓ — Individual Note
+14 ✓ — Reminders Home
+15 ✓ — Create Reminder
+16 ✓ — Reminder Details
+17 ✓ — Games Home
+18 ✓ — Would You Rather
+19 ✓ — 20 Questions
+20 ✓ — Couple Trivia
+21 ✓ — Word Scramble
+22 ✓ — Guess the Word
+23 ✓ — Riddle Me This
+24 ✓ — Two Truths & a Lie
+25 ✓ — Emoji Guess
+26 ✓ — Would You Rather gameplay variation
+27 ✓ — This or That
+28 ✓ — Memory Match
+29 ✓ — Hangman
+30 ✓ — Word Scramble gameplay variation
+31 ✓ — Trivia Challenge
+32 ✓ — Word Search
+33 ✓ — Tic-Tac-Toe
+34 ✓ — Connect Four
+35 ✓ — 2048
+================================================
+ADDITIONAL DEDICATED SCREENS ALREADY DESIGNED
+================================================
+The following screens were designed after the original
+35-page Canva PDF and are therefore additional physical
+Canva pages/work.
+✓ App Lock Setup
+✓ Setup Complete
+✓ Us / Relationship Hub
+✓ More Menu
+✓ Relationship Counter
+✓ Timeline Home
+✓ Add Timeline Event
+✓ Timeline Event Details
+These count as completed visual work where applicable to
+the original major-screen architecture.
+DO NOT RECREATE THEM.
+================================================
+EXTRA CANVA GAME SCREENS
+The following are already designed in Canva but are NOT
+additional entries in the original 90-screen architecture:
+✓ Hangman
+✓ Word Search
+✓ Tic-Tac-Toe
+✓ Connect Four
+✓ 2048
+✓ Two Truths & a Lie
+✓ Additional Word Scramble gameplay
+✓ Additional Trivia gameplay
+✓ Additional game gameplay variations already present
+KEEP THEM.
+DO NOT DELETE THEM.
+DO NOT RECREATE THEM.
+They are useful extra game screens beyond the original
+90-major-screen architecture.
+================================================
+SURPRISE BOX STATUS
+The original architecture contained:
+25 — Surprise Box Home
+26 — Create Surprise
+27 — Open Surprise / Reveal
+CURRENT V1 STATUS:
+REMOVED / DEFERRED
+These are NOT considered missing screens.
+They remain in the historical architecture only so that the
+original numbering is preserved.
+If TwoHearts later gains a proper online/synchronization
+architecture, Surprise Box can be reintroduced as a future
+feature set.
+DO NOT automatically add these screens back into V1.
+================================================
+WHAT REMAINS TO DESIGN
+The remaining work is every ACTIVE unchecked major screen
+above.
+Screens 25–27 are excluded because they are intentionally
+removed/deferred.
+Do NOT recreate screens already covered by the Canva PDF.
+Do NOT recreate screens already designed as additional
+dedicated pages.
+Do NOT count extra game screens twice.
+The project MAY exceed the number of active major screens
+because:
+some major screens can require multiple visual pages
+some games already have multiple gameplay variations
+some features may require additional supporting views
+extra game screens are allowed
+some major screens may later need dedicated states
+THAT IS OKAY.
+The goal is COMPLETE FEATURE/UI COVERAGE,
+not forcing the physical Canva file to stop at a particular
+page number.
+================================================
+NO REDUNDANCY RULE
+Before generating any future prompt, compare the requested
+screen against:
+The original 90-screen architecture
+The 35 existing Canva PDF pages
+All additional dedicated screens already created
+The intentionally removed/deferred Surprise Box screens
+If the requested screen already exists visually:
+DO NOT generate another duplicate.
+If it is already covered conceptually but lacks a dedicated
+screen, determine whether a dedicated screen is actually
+needed before creating it.
+If it is a genuinely new major screen:
+CREATE IT.
+If an existing screen only partially covers the requested
+feature, distinguish between:
+ALREADY COVERED
+PARTIALLY COVERED
+DEDICATED SCREEN STILL NEEDED
+================================================
+CANVA NUMBERING RULE
+The Canva page number is independent from the original
+90-screen number.
+For example:
+Original major screen:
+64 — Our Places Home
+It does NOT automatically mean Canva Slide 64.
+A future request might say:
+"Slide 36 — Our Places Home"
+In that case:
+DESIGN OUR PLACES HOME
+AND PLACE IT ON CANVA SLIDE 36.
+Do NOT redesign the feature corresponding to original
+screen 36.
+The user-provided Canva slide number determines WHERE.
+The user-provided screen title determines WHAT.
+================================================
+CURRENT STATUS
+ORIGINAL ARCHITECTURE:
+90 major screens
+INTENTIONALLY DEFERRED:
+3 major screens
+25 — Surprise Box Home
+26 — Create Surprise
+27 — Open Surprise / Reveal
+ACTIVE V1 MAJOR SCREEN TARGET:
+87 major screens
+ORIGINAL CANVA PDF:
+35 pages completed
+ADDITIONAL DEDICATED SCREENS:
+8 screens designed after the original 35-page PDF
+EXTRA GAME SCREENS:
+Already included in the Canva work and retained
+IMPORTANT:
+"87 active major screens" does NOT mean the final Canva file
+must contain exactly 87 pages.
+The physical Canva page count may be higher.
+================================================
+WORKFLOW FROM NOW ON
+USER REQUEST FORMAT:
+"Slide [Canva page number] — [EXACT SCREEN TITLE]"
+ASSISTANT MUST:
+Use the supplied screen title.
+Treat the supplied Canva slide number as the destination
+   page number.
+Check whether that feature already exists.
+Check the existing Canva structure.
+Avoid duplicates.
+Preserve the master TwoHearts visual identity.
+Preserve 1080 × 2400 portrait dimensions.
+Include the master prompt.
+Design ONLY the requested screen.
+Never silently change the requested title.
+Never assume what the next screen is.
+Never use the original major-screen number as the Canva
+    page number unless explicitly instructed.
+Never automatically revive Surprise Box for V1.
+===============================================
+MASTER CANVA DESIGN REQUIREMENT
+EVERY NEW TWOHEARTS CANVA SCREEN MUST USE:
+1080 × 2400 PX
+PORTRAIT
+MOBILE APP UI
+DO NOT:
+resize the canvas
+change the aspect ratio
+convert to square
+convert to landscape
+crop the canvas
+rotate the canvas
+create a different-sized page
+ONLY DESIGN INSIDE THE EXISTING:
+1080 × 2400 PX
+CANVA CANVAS.
+================================================
+MASTER TWOHEARTS DESIGN IDENTITY
+TwoHearts should consistently feel:
+warm
+intimate
+elegant
+premium
+personal
+calm
+modern
+playful
+trustworthy
+PRIMARY BRAND ACCENT:
+BURGUNDY RED
+SUPPORTING PALETTE:
+warm cream
+soft blush
+muted rose
+warm beige
+lighter burgundy
+darker burgundy
+deep charcoal
+soft neutral tones
+Use burgundy strategically rather than covering entire
+screens with burgundy.
+TwoHearts has a subtle botanical identity inspired by the
+rose lily.
+Use floral details sparingly.
+DO NOT:
+overload screens with flowers
+overload screens with hearts
+make the app look like a Valentine's Day card
+use gender-specific relationship assumptions
+make the app look like a dating app
+make the app look like a public social network
+RELATIONSHIP-NEUTRAL LANGUAGE:
+Preferred:
+"YOU"
+"YOUR SPECIAL SOMEONE"
+Avoid:
+"BOYFRIEND"
+"GIRLFRIEND"
+"HUSBAND"
+"WIFE"
+unless the user explicitly requests otherwise.
+================================================
+FINAL SOURCE-OF-TRUTH RULE
+There are now THREE layers of truth:
+ORIGINAL 90-SCREEN ARCHITECTURE
+   Defines the complete feature architecture.
+CANVA PDF + ADDITIONAL COMPLETED CANVA WORK
+   Defines what has already been visually designed.
+USER'S CURRENT REQUEST
+   Defines exactly which Canva slide and screen should be
+   worked on next.
+If these appear to conflict:
+THE CURRENT USER REQUEST'S EXPLICIT
+"SLIDE NUMBER + SCREEN TITLE"
+TAKES PRIORITY FOR THE CURRENT DESIGN TASK.
+Do not silently reinterpret it.
+Do not invent a different screen.
+Do not renumber the architecture.
+Do not create redundant work.
+================================================
+END OF TWOHEARTS V1 MASTER ROADMAP
+================================================ 
