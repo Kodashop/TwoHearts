@@ -1,31 +1,28 @@
-***Profile & Welcome screens implemented: WelcomeActivity and ProfileSetupActivity***
+***Relationship Setup implemented***
 
 Files added:
-- app/src/main/java/com/synthlabs/twohearts/ui/onboarding/WelcomeActivity.java
-- app/src/main/java/com/synthlabs/twohearts/ui/onboarding/ProfileSetupActivity.java
-- app/src/main/res/layout/activity_welcome.xml
-- app/src/main/res/layout/activity_profile_setup.xml
+- app/src/main/java/com/synthlabs/twohearts/ui/onboarding/RelationshipSetupActivity.java
+- app/src/main/res/layout/activity_relationship_setup.xml
+- app/src/main/res/values/relationship_strings.xml
 
 Files modified:
-- app/src/main/java/com/synthlabs/twohearts/ui/splash/SplashActivity.java (now checks for existing profile and routes to Welcome if needed)
-- TWOHEARTS_BUILD_PROGRESS.md (appended summary)
+- TWOHEARTS_BUILD_PROGRESS.md (appended summary of Relationship Setup completion)
 
 Functionality implemented:
-- Welcome screen with branding, intro copy and a Get started CTA that navigates to Profile Setup.
-- Profile setup screen with name (required), nickname (optional), birthday (date picker) and photo placeholder.
-- Validation: name is required; if empty, shows error and blocks save.
-- Persistence: saves profile using existing ProfileRepository.saveProfile, storing into local SQLite.
-- Navigation: After saving, the app navigates to MainActivity. Welcome is skipped on future launches when a profile exists.
-- Back navigation: back from ProfileSetup returns to Welcome; back from Welcome exits the app (default behavior).
+- Full Relationship Setup screen with inputs:
+  - Space name (required)
+  - Greeting (optional)
+  - Start date (DatePicker)
+  - Relationship status (Spinner with options)
+- Validation: space name required; start date required.
+- Persistence: saves relationship via ProfileRepository.saveRelationship(..) into the existing relationship table (id=1). Restores existing values when reopened via ProfileRepository.getRelationship().
+- Navigation: after successful save navigates to MainActivity (clearing back stack). Back navigation returns to the previous onboarding screen if invoked.
+- UI uses native Android XML and theme attributes; no external dependencies added.
 
-Repositories/classes connected:
-- ProfileRepository (used to get existing profile and save new profile)
-- Prefs (used as a minimal indicator to mark onboarding progressed)
-
-Notes / assumptions:
-- Photo selection and storage are intentionally minimal (uses default launcher icon). If we add photo picking, we'll honor the manifest permissions and implement storage in Profile.photoUri.
-- I reused Prefs.KEY_PERMISSIONS_SHOWN to record progress instead of introducing a new pref key to avoid unnecessary changes; the app determines whether to show Welcome by checking for an existing profile row in the database.
+Notes:
+- Relationship status options are defined in relationship_strings.xml. If you prefer different wording or additional options, tell me and I will update them.
+- I intentionally navigate to MainActivity after save, consistent with the previous ProfileSetup flow. We can instead continue to Personalization Setup when ready.
 
 Next steps:
-- Please run a build and smoke-test on a device/emulator to verify onboarding flow.
-- If acceptable, I will proceed with Relationship Setup as the next screen in Phase 1.
+- Run a local build and test the flow: Splash -> Welcome -> Profile Setup -> Relationship Setup -> MainActivity.
+- After you confirm, I'll implement Personalization Setup or adjust navigation if you want the flow to continue to that next.

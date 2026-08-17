@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set up your relationship"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+        <EditText
+            android:id="@+id/et_space_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What should we call your space? (e.g. Our Story)"
+            android:inputType="text"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Optional greeting message"
+            android:inputType="text"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relationship started"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tap to select a date"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relationship status"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/sp_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/relationship_status_options"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_save_relationship"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save and continue"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
