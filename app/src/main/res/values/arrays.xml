@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="date_types">
+        <item>Birthday</item>
+        <item>Anniversary</item>
+        <item>Milestone</item>
+        <item>Other</item>
+    </string-array>
+</resources>
