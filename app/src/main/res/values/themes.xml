@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base TwoHearts theme. All screens use this or a child of it. -->
+    <style name="Theme.TwoHearts" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/th_maroon</item>
+        <item name="colorPrimaryVariant">@color/th_maroon_dark</item>
+        <item name="colorOnPrimary">@color/th_on_primary</item>
+        <item name="colorSecondary">@color/th_rose</item>
+        <item name="colorOnSecondary">@color/th_text_primary</item>
+        <item name="android:colorBackground">@color/th_background</item>
+        <item name="colorSurface">@color/th_card</item>
+        <item name="colorOnSurface">@color/th_text_primary</item>
+        <item name="colorError">@color/th_error</item>
+        <item name="android:statusBarColor">@color/th_background</item>
+        <item name="android:navigationBarColor">@color/th_card</item>
+        <item name="android:windowBackground">@color/th_background</item>
+        <item name="android:textColorPrimary">@color/th_text_primary</item>
+        <item name="android:textColorSecondary">@color/th_text_secondary</item>
+        <item name="materialAlertDialogTheme">@style/Theme.TwoHearts.Dialog</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.TwoHearts.BottomSheet</item>
+    </style>
+
+    <style name="Theme.TwoHearts.Splash" parent="Theme.TwoHearts">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="Theme.TwoHearts.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/th_maroon</item>
+        <item name="colorSurface">@color/th_card</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.TwoHearts.Card</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Text.TwoHearts.Section</item>
+    </style>
+
+    <style name="Theme.TwoHearts.BottomSheet" parent="Theme.MaterialComponents.DayNight.BottomSheetDialog">
+        <item name="colorPrimary">@color/th_maroon</item>
+        <item name="bottomSheetStyle">@style/Widget.TwoHearts.BottomSheet</item>
+    </style>
+
+    <style name="Widget.TwoHearts.BottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/th_card</item>
+        <item name="shapeAppearance">@style/Shape.TwoHearts.Sheet</item>
+    </style>
+
+    <style name="Shape.TwoHearts.Card" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/radius_card</item>
+    </style>
+
+    <style name="Shape.TwoHearts.Sheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+</resources>

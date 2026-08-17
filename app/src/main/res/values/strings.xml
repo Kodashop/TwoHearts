@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  TWOHEARTS TEXT — every user-visible string lives here.
+  To reword anything in the app, edit the value (right side) only.
+  Never change a name="..." key, layouts and code reference it.
+-->
+<resources>
+    <string name="app_name">TwoHearts</string>
+    <string name="app_tagline">Yours. Always.</string>
+
+    <!-- Generic -->
+    <string name="action_continue">Continue</string>
+    <string name="action_back">Back</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_done">Done</string>
+    <string name="action_skip">Skip for now</string>
+    <string name="action_add">Add</string>
+    <string name="action_close">Close</string>
+    <string name="action_retry">Try again</string>
+    <string name="action_got_it">Got it</string>
+    <string name="action_search">Search</string>
+    <string name="delete_confirm_title">Delete this?</string>
+    <string name="delete_confirm_message">This will be removed from TwoHearts. This cannot be undone.</string>
+    <string name="saved">Saved</string>
+    <string name="deleted">Deleted</string>
+    <string name="error_generic">Something did not go through. Please try again.</string>
+    <string name="error_required">Please fill this in</string>
+
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to TwoHearts</string>
+    <string name="welcome_body">This is our private space, just for the two of us. Keep memories, notes, moments, reminders, games, and meaningful experiences together.</string>
+    <string name="welcome_cta">Get Started</string>
+    <string name="permissions_title">A few permissions</string>
+    <string name="permissions_body">TwoHearts works completely offline. These permissions only help the app remind you and hold your photos.</string>
+    <string name="permission_notifications">Notifications — so reminders and important dates can reach you.</string>
+    <string name="permission_alarms">Exact alarms — so reminders arrive at the right minute.</string>
+    <string name="permission_photos">Photos — only when you choose a picture for a memory.</string>
+    <string name="permissions_optional_note">You can deny any of these. TwoHearts will keep working, some reminders just will not appear.</string>
+    <string name="profile_setup_title">About you</string>
+    <string name="profile_setup_body">Just the basics, stored only on this phone.</string>
+    <string name="hint_your_name">Your name</string>
+    <string name="hint_nickname">Nickname (optional)</string>
+    <string name="hint_birthday">Birthday</string>
+    <string name="relationship_setup_title">Your special someone</string>
+    <string name="relationship_setup_body">Who are we keeping all of this for?</string>
+    <string name="hint_partner_name">Their name</string>
+    <string name="hint_partner_nickname">Their nickname (optional)</string>
+    <string name="hint_partner_birthday">Their birthday</string>
+    <string name="hint_anniversary">The day it started</string>
+    <string name="personalization_title">Make it ours</string>
+    <string name="personalization_body">Small touches that show up across the app.</string>
+    <string name="hint_space_name">Name of your space</string>
+    <string name="default_space_name">Our little space</string>
+    <string name="hint_greeting">How TwoHearts greets you</string>
+    <string name="applock_setup_title">Keep it private</string>
+    <string name="applock_setup_body">Add a PIN so only the two of you can open TwoHearts. You can change this later in Settings.</string>
+    <string name="hint_pin">4–8 digit PIN</string>
+    <string name="hint_pin_confirm">Confirm PIN</string>
+    <string name="pin_mismatch">Those PINs do not match</string>
+    <string name="pin_too_short">Use at least 4 digits</string>
+    <string name="pin_wrong">That PIN is not right</string>
+    <string name="applock_enable">Enable App Lock</string>
+    <string name="story_date_title">Where our story starts</string>
+    <string name="story_date_body">We will count every day from here.</string>
+    <string name="setup_complete_title">We are all set</string>
+    <string name="setup_complete_body">Your space is ready. Everything you add stays on this phone.</string>
+    <string name="setup_complete_cta">Open TwoHearts</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_memories">Memories</string>
+    <string name="nav_notes">Notes</string>
+    <string name="nav_games">Games</string>
+    <string name="nav_more">More</string>
+
+    <!-- Home -->
+    <string name="greeting_morning">Good morning</string>
+    <string name="greeting_afternoon">Good afternoon</string>
+    <string name="greeting_evening">Good evening</string>
+    <string name="home_together">Together</string>
+    <string name="home_recent_memory">Recent Memory</string>
+    <string name="home_latest_note">Latest Note</string>
+    <string name="home_upcoming">Upcoming</string>
+    <string name="home_play_something">Play something</string>
+    <string name="home_days_together">%1$d days together</string>
+    <string name="tile_memories_sub">Treasured moments we\'ll never forget</string>
+    <string name="tile_notes_sub">Little thoughts, big meaning</string>
+    <string name="tile_reminders_sub">Important things for us</string>
+    <string name="tile_games_sub">Play together, have fun</string>
+
+    <!-- Us / shared space -->
+    <string name="us_title">Us</string>
+    <string name="us_subtitle">Our shared space</string>
+    <string name="us_counter">Relationship Counter</string>
+    <string name="us_timeline">Timeline</string>
+    <string name="us_places">Our Places</string>
+    <string name="us_mood">Mood</string>
+    <string name="us_dates">Important Dates</string>
+
+    <!-- More menu -->
+    <string name="more_title">More</string>
+    <string name="more_period">Period Tracker</string>
+    <string name="more_vault">Private Vault</string>
+    <string name="more_reminders">Reminders</string>
+    <string name="more_timeline">Timeline</string>
+    <string name="more_places">Our Places</string>
+    <string name="more_mood">Mood</string>
+    <string name="more_dates">Important Dates</string>
+    <string name="more_search">Search</string>
+    <string name="more_notifications">Notification Center</string>
+    <string name="more_settings">Settings</string>
+    <string name="more_game_stats">Game Statistics</string>
+
+    <!-- Memories -->
+    <string name="memories_title">Memories</string>
+    <string name="memory_add">Add Memory</string>
+    <string name="memory_edit">Edit Memory</string>
+    <string name="hint_memory_title">Title</string>
+    <string name="hint_memory_story">What happened?</string>
+    <string name="hint_memory_date">Date</string>
+    <string name="hint_memory_location">Where (optional)</string>
+    <string name="memory_add_photo">Add photo</string>
+    <string name="memory_favorite">Favourite</string>
+    <string name="empty_memories">No memories yet. Add the first one and this page becomes your album.</string>
+
+    <!-- Notes -->
+    <string name="notes_title">Notes</string>
+    <string name="note_add">Add Note</string>
+    <string name="note_edit">Edit Note</string>
+    <string name="hint_note_title">Title</string>
+    <string name="hint_note_body">Write something…</string>
+    <string name="note_pin">Pin to top</string>
+    <string name="empty_notes">No notes yet. Leave a little thought for later.</string>
+
+    <!-- Timeline -->
+    <string name="timeline_title">Timeline</string>
+    <string name="timeline_add">Add Event</string>
+    <string name="timeline_edit">Edit Event</string>
+    <string name="hint_event_title">Event</string>
+    <string name="hint_event_note">Note (optional)</string>
+    <string name="empty_timeline">Your story starts here. Add the first milestone.</string>
+
+    <!-- Reminders -->
+    <string name="reminders_title">Reminders</string>
+    <string name="reminder_add">Add Reminder</string>
+    <string name="reminder_edit">Edit Reminder</string>
+    <string name="hint_reminder_title">What should we remember?</string>
+    <string name="hint_reminder_note">Note (optional)</string>
+    <string name="reminder_date">Date</string>
+    <string name="reminder_time">Time</string>
+    <string name="reminder_repeat">Repeat</string>
+    <string name="repeat_none">Once</string>
+    <string name="repeat_daily">Every day</string>
+    <string name="repeat_weekly">Every week</string>
+    <string name="repeat_monthly">Every month</string>
+    <string name="repeat_yearly">Every year</string>
+    <string name="empty_reminders">No reminders yet. TwoHearts will nudge you when you add one.</string>
+    <string name="reminder_scheduled">Reminder set</string>
+    <string name="notif_action_done">Mark done</string>
+    <string name="notif_action_snooze">Snooze 1 hour</string>
+    <string name="snoozed">Snoozed for an hour</string>
+
+    <!-- Relationship counter / dates -->
+    <string name="counter_title">Relationship Counter</string>
+    <string name="counter_days">Days together</string>
+    <string name="counter_next_milestone">Next milestone</string>
+    <string name="dates_title">Important Dates</string>
+    <string name="dates_add">Add Date</string>
+    <string name="empty_dates">Add birthdays, anniversaries and the days that matter.</string>
+
+    <!-- Places -->
+    <string name="places_title">Our Places</string>
+    <string name="place_add">Add Place</string>
+    <string name="place_edit">Edit Place</string>
+    <string name="hint_place_name">Place name</string>
+    <string name="hint_place_note">Why it matters</string>
+    <string name="hint_place_address">Address (optional)</string>
+    <string name="place_visited">We have been here</string>
+    <string name="place_wishlist">Want to go</string>
+    <string name="empty_places">No places yet. Add the first spot that means something.</string>
+
+    <!-- Mood -->
+    <string name="mood_title">Mood</string>
+    <string name="mood_add">How are you?</string>
+    <string name="mood_history">Mood History</string>
+    <string name="hint_mood_note">Anything to add?</string>
+    <string name="empty_mood">No moods logged yet.</string>
+
+    <!-- Games -->
+    <string name="games_title">Mini Games</string>
+    <string name="games_subtitle">Play together, have fun</string>
+    <string name="game_start">Start</string>
+    <string name="game_next">Next</string>
+    <string name="game_finish">Finish</string>
+    <string name="game_play_again">Play again</string>
+    <string name="game_results">Results</string>
+    <string name="game_stats">Game Statistics</string>
+    <string name="game_score">Score</string>
+    <string name="game_best">Best</string>
+    <string name="game_played">Played</string>
+    <string name="game_how_to">How to play</string>
+    <string name="game_your_turn">Your turn</string>
+    <string name="game_correct">Correct</string>
+    <string name="game_wrong">Not this time</string>
+    <string name="game_no_content">This game has no content yet. Add entries in assets/games.</string>
+
+    <!-- Period tracker -->
+    <string name="period_title">Period Tracker</string>
+    <string name="period_setup_title">Set up your tracker</string>
+    <string name="period_setup_body">Everything stays on this phone. Nothing is uploaded anywhere.</string>
+    <string name="period_log">Log Period</string>
+    <string name="period_calendar">Calendar</string>
+    <string name="period_cycle_details">Cycle Details</string>
+    <string name="period_history">Cycle History</string>
+    <string name="period_settings">Tracker Settings</string>
+    <string name="period_reminders">Period Reminders</string>
+    <string name="period_privacy">Privacy</string>
+    <string name="period_cycle_day">Cycle day %1$d</string>
+    <string name="period_next_estimate">Next period estimated %1$s</string>
+    <string name="period_estimate_note">Predictions are estimates based on your logged cycles.</string>
+    <string name="hint_cycle_length">Typical cycle length (days)</string>
+    <string name="hint_period_length">Typical period length (days)</string>
+    <string name="hint_last_period">Last period start date</string>
+    <string name="period_flow">Flow</string>
+    <string name="flow_light">Light</string>
+    <string name="flow_medium">Medium</string>
+    <string name="flow_heavy">Heavy</string>
+    <string name="period_show_fertile">Show estimated fertile window</string>
+    <string name="period_partner_visibility">Let partner view see status</string>
+    <string name="period_hide_details">Hide sensitive details from previews</string>
+    <string name="period_local_only">Local-only mode</string>
+    <string name="empty_cycles">No cycles logged yet.</string>
+
+    <!-- Vault -->
+    <string name="vault_title">Private Vault</string>
+    <string name="vault_locked_title">Vault locked</string>
+    <string name="vault_locked_body">Enter your PIN to open the vault. Vault content never appears in search, previews or notifications.</string>
+    <string name="vault_unlock">Unlock</string>
+    <string name="vault_add">Add to Vault</string>
+    <string name="vault_empty">The vault is empty. Anything you add here stays hidden.</string>
+    <string name="hint_vault_title">Title</string>
+    <string name="hint_vault_body">Private content</string>
+
+    <!-- Search -->
+    <string name="search_title">Search</string>
+    <string name="hint_search">Search memories, notes, timeline, places…</string>
+    <string name="search_no_results">Nothing matched that. Vault content is never searched.</string>
+    <string name="search_recent">Recent searches</string>
+
+    <!-- Notification center -->
+    <string name="notification_center_title">Notification Center</string>
+    <string name="empty_notification_center">No notifications yet.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_relationship">Relationship</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_security">Security &amp; App Lock</string>
+    <string name="settings_storage">Storage</string>
+    <string name="settings_about">About TwoHearts</string>
+    <string name="settings_text_size">Text size</string>
+    <string name="text_size_small">Small</string>
+    <string name="text_size_default">Default</string>
+    <string name="text_size_large">Large</string>
+    <string name="text_size_xlarge">Extra Large</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_notif_reminders">Reminder notifications</string>
+    <string name="settings_notif_dates">Important date notifications</string>
+    <string name="settings_notif_period">Period notifications</string>
+    <string name="settings_notif_daily">Daily thought</string>
+    <string name="settings_lock_enabled">App Lock</string>
+    <string name="settings_lock_change">Change PIN</string>
+    <string name="settings_lock_biometric">Allow fingerprint unlock</string>
+    <string name="settings_lock_timeout">Lock after</string>
+    <string name="lock_immediately">Immediately</string>
+    <string name="lock_1min">1 minute</string>
+    <string name="lock_5min">5 minutes</string>
+    <string name="lock_15min">15 minutes</string>
+    <string name="settings_lock_now">Lock now</string>
+    <string name="storage_items">Stored items</string>
+    <string name="storage_database">Database size</string>
+    <string name="storage_photos">Photo storage</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_offline">TwoHearts works fully offline. Your data never leaves this phone.</string>
+    <string name="lock_title">TwoHearts is locked</string>
+    <string name="lock_body">Enter your PIN to continue.</string>
+
+    <!-- Notifications -->
+    <string name="channel_reminders">Reminders</string>
+    <string name="channel_reminders_desc">Reminders you created in TwoHearts</string>
+    <string name="channel_dates">Important dates</string>
+    <string name="channel_dates_desc">Birthdays, anniversaries and milestones</string>
+    <string name="channel_period">Period tracker</string>
+    <string name="channel_period_desc">Private period and cycle reminders</string>
+    <string name="channel_daily">Daily thought</string>
+    <string name="channel_daily_desc">A small daily nudge for the two of you</string>
+    <string name="notif_period_expected">Your period is expected soon</string>
+    <string name="notif_period_expected_body">Based on your logged cycles. Tap to open the tracker.</string>
+    <string name="notif_period_track">Time to log today</string>
+    <string name="notif_period_track_body">Keep your cycle history accurate.</string>
+    <string name="notif_milestone">A milestone today</string>
+    <string name="notif_private">TwoHearts</string>
+    <string name="notif_private_body">You have something private waiting.</string>
+
+    <!-- Notification actions and reminder copy -->
+    <string name="action_snooze">Snooze 1 hour</string>
+    <string name="action_mark_done">Mark done</string>
+    <string name="reminder_default_body">A gentle nudge from your little space.</string>
+    <string name="period_reminder_title">Period expected soon</string>
+    <string name="period_reminder_body">Your next period is estimated in a couple of days.</string>
+</resources>

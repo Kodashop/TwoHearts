@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TwoHearts icon: ic_notes. Replace this file to change the icon everywhere. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="@color/th_maroon">
+    <path android:fillColor="@android:color/white" android:pathData="M5,3h9l5,5v13c0,1.1 -0.9,2 -2,2H5c-1.1,0 -2,-0.9 -2,-2V5C3,3.9 3.9,3 5,3zM13,4.8V9h4.2L13,4.8zM7,12h10v1.6H7V12zM7,15.4h10V17H7V15.4zM7,18.8h6v1.6H7V18.8z" />
+</vector>

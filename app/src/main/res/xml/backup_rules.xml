@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Backups are disabled in the manifest; this file documents intent. -->
+<full-backup-content>
+    <exclude domain="database" path="twohearts.db" />
+    <exclude domain="sharedpref" path="twohearts_secure.xml" />
+</full-backup-content>

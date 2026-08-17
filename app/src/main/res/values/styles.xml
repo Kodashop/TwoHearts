@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  TWOHEARTS COMPONENT STYLES
+  Use these instead of styling widgets inline, so a design tweak here
+  updates every screen at once.
+-->
+<resources>
+    <!-- Typography: serif display for headings, sans for body (see docs). -->
+    <style name="Text.TwoHearts.Display" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:textColor">@color/th_maroon</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="Text.TwoHearts.Title" parent="Text.TwoHearts.Display">
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="Text.TwoHearts.Section" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">@dimen/text_section</item>
+        <item name="android:textColor">@color/th_maroon</item>
+    </style>
+
+    <style name="Text.TwoHearts.Body" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textColor">@color/th_text_primary</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+
+    <style name="Text.TwoHearts.Caption" parent="Text.TwoHearts.Body">
+        <item name="android:textSize">@dimen/text_caption</item>
+        <item name="android:textColor">@color/th_text_secondary</item>
+    </style>
+
+    <style name="Text.TwoHearts.Muted" parent="Text.TwoHearts.Caption">
+        <item name="android:textColor">@color/th_text_muted</item>
+    </style>
+
+    <!-- Cards -->
+    <style name="Card.TwoHearts" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/th_card</item>
+        <item name="cardCornerRadius">@dimen/radius_card</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/th_divider</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">@dimen/space_md</item>
+    </style>
+
+    <style name="Card.TwoHearts.Tinted" parent="Card.TwoHearts">
+        <item name="cardBackgroundColor">@color/th_card_tint</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="Button.TwoHearts.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/th_maroon</item>
+        <item name="android:textColor">@color/th_on_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="iconTint">@color/th_on_primary</item>
+        <item name="iconGravity">textStart</item>
+        <item name="rippleColor">@color/th_rose_light</item>
+    </style>
+
+    <style name="Button.TwoHearts.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/th_maroon</item>
+        <item name="android:textColor">@color/th_maroon</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_button</item>
+        <item name="iconTint">@color/th_maroon</item>
+    </style>
+
+    <style name="Button.TwoHearts.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/th_maroon</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Inputs -->
+    <style name="Input.TwoHearts" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/th_rose</item>
+        <item name="boxBackgroundColor">@color/th_card</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radius_chip</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radius_chip</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radius_chip</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radius_chip</item>
+        <item name="hintTextColor">@color/th_text_secondary</item>
+    </style>
+
+    <style name="Nav.TwoHearts" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="backgroundTint">@color/th_card</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+</resources>

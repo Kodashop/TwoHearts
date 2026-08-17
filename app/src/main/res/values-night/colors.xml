@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark theme surface overrides. Brand hues stay recognisable. -->
+<resources>
+    <color name="th_background">#191211</color>
+    <color name="th_background_alt">#1F1615</color>
+    <color name="th_card">#241A19</color>
+    <color name="th_card_tint">#2C201F</color>
+    <color name="th_divider">#3A2B29</color>
+    <color name="th_text_primary">#F6EAE4</color>
+    <color name="th_text_secondary">#CDB8B1</color>
+    <color name="th_text_muted">#A08D87</color>
+    <color name="th_rose_light">#42302D</color>
+</resources>

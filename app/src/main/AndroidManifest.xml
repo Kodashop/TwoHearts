@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Offline-first: no INTERNET permission is requested on purpose. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"
+        android:minSdkVersion="33" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+    <application
+        android:name=".core.TwoHeartsApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="false"
+        android:theme="@style/Theme.TwoHearts">
+
+        <activity android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TwoHearts.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.onboarding.PermissionsActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.WelcomeActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.ProfileSetupActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.RelationshipSetupActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.PersonalizationSetupActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.AppLockSetupActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.StoryDateSetupActivity" android:exported="false" />
+        <activity android:name=".ui.onboarding.SetupCompleteActivity" android:exported="false" />
+
+        <activity android:name=".ui.MainActivity" android:exported="false" />
+        <activity android:name=".ui.lock.AppLockActivity" android:exported="false"
+            android:excludeFromRecents="true" />
+
+        <activity android:name=".ui.memories.MemoryListActivity" android:exported="false" />
+        <activity android:name=".ui.memories.MemoryDetailActivity" android:exported="false" />
+        <activity android:name=".ui.memories.MemoryEditActivity" android:exported="false" />
+        <activity android:name=".ui.notes.NoteEditActivity" android:exported="false" />
+        <activity android:name=".ui.timeline.TimelineActivity" android:exported="false" />
+        <activity android:name=".ui.timeline.TimelineEditActivity" android:exported="false" />
+        <activity android:name=".ui.reminders.RemindersActivity" android:exported="false" />
+        <activity android:name=".ui.reminders.ReminderEditActivity" android:exported="false" />
+        <activity android:name=".ui.relationship.RelationshipCounterActivity" android:exported="false" />
+        <activity android:name=".ui.places.PlacesActivity" android:exported="false" />
+        <activity android:name=".ui.places.PlaceEditActivity" android:exported="false" />
+        <activity android:name=".ui.mood.MoodActivity" android:exported="false" />
+        <activity android:name=".ui.mood.MoodAddActivity" android:exported="false" />
+        <activity android:name=".ui.mood.MoodHistoryActivity" android:exported="false" />
+        <activity android:name=".ui.games.GameMenuActivity" android:exported="false" />
+        <activity android:name=".ui.games.GamePlayActivity" android:exported="false" />
+        <activity android:name=".ui.games.GameResultActivity" android:exported="false" />
+        <activity android:name=".ui.games.GameStatsActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodHomeActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodSetupActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodCalendarActivity" android:exported="false" />
+        <activity android:name=".ui.period.LogPeriodActivity" android:exported="false" />
+        <activity android:name=".ui.period.CycleDetailsActivity" android:exported="false" />
+        <activity android:name=".ui.period.CycleHistoryActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodRemindersActivity" android:exported="false" />
+        <activity android:name=".ui.period.PeriodPrivacyActivity" android:exported="false" />
+        <activity android:name=".ui.vault.VaultLockActivity" android:exported="false" />
+        <activity android:name=".ui.vault.VaultHomeActivity" android:exported="false" />
+        <activity android:name=".ui.vault.VaultItemEditActivity" android:exported="false" />
+        <activity android:name=".ui.vault.VaultItemViewActivity" android:exported="false" />
+        <activity android:name=".ui.search.SearchActivity" android:exported="false" />
+        <activity android:name=".ui.notifications.NotificationCenterActivity" android:exported="false" />
+        <activity android:name=".ui.settings.SettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.ProfileSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.RelationshipSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.AppearanceSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.NotificationSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.SecuritySettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.StorageSettingsActivity" android:exported="false" />
+        <activity android:name=".ui.settings.AboutActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDatesActivity" android:exported="false" />
+
+        <receiver android:name=".notifications.ReminderAlarmReceiver" android:exported="false" />
+        <receiver android:name=".notifications.NotificationActionReceiver" android:exported="false" />
+        <receiver android:name=".notifications.BootRescheduleReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

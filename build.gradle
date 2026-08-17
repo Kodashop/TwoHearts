@@ -1,0 +1,5 @@
+// Root build file. Plugin versions are declared here only, so the whole
+// project can be upgraded from a single place.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}

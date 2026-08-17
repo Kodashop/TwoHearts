@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  TWOHEARTS COLOR SYSTEM  (single source of truth for all colors)
+  Change a value here and it changes everywhere in the app.
+  Dark-mode overrides live in res/values-night/colors.xml
+-->
+<resources>
+    <!-- Brand -->
+    <color name="th_maroon">#722527</color>
+    <color name="th_maroon_dark">#511A1C</color>
+    <color name="th_maroon_soft">#8E3A3C</color>
+    <color name="th_rose">#C98B84</color>
+    <color name="th_rose_light">#EFD5CE</color>
+    <color name="th_gold">#C9A227</color>
+
+    <!-- Surfaces -->
+    <color name="th_background">#FBF3EC</color>
+    <color name="th_background_alt">#F8EFE6</color>
+    <color name="th_card">#FFFDFB</color>
+    <color name="th_card_tint">#FDF4EE</color>
+    <color name="th_divider">#EADFD5</color>
+
+    <!-- Text -->
+    <color name="th_text_primary">#2E2422</color>
+    <color name="th_text_secondary">#6B5B56</color>
+    <color name="th_text_muted">#9C8A84</color>
+    <color name="th_on_primary">#FFF8F4</color>
+
+    <!-- Semantic -->
+    <color name="th_success">#4F7D5B</color>
+    <color name="th_warning">#C08A3E</color>
+    <color name="th_error">#A33A34</color>
+    <color name="th_period">#C1466B</color>
+    <color name="th_fertile">#9C7BB8</color>
+    <color name="th_transparent">#00000000</color>
+    <color name="th_scrim">#66000000</color>
+</resources>
