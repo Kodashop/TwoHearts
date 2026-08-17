@@ -49,7 +49,8 @@
         <activity android:name=".ui.memories.MemoryDetailActivity" android:exported="false" />
         <activity android:name=".ui.memories.MemoryEditActivity" android:exported="false" />
         <activity android:name=".ui.notes.NoteEditActivity" android:exported="false" />
-        <activity android:name=".ui.timeline.TimelineActivity" android:exported="false" />
+        <!-- Fixed: register the actual implemented TimelineListActivity instead of a missing TimelineActivity -->
+        <activity android:name=".ui.timeline.TimelineListActivity" android:exported="false" />
         <activity android:name=".ui.timeline.TimelineEditActivity" android:exported="false" />
         <activity android:name=".ui.reminders.RemindersActivity" android:exported="false" />
         <activity android:name=".ui.reminders.ReminderEditActivity" android:exported="false" />
@@ -86,6 +87,21 @@
         <activity android:name=".ui.settings.SecuritySettingsActivity" android:exported="false" />
         <activity android:name=".ui.settings.StorageSettingsActivity" android:exported="false" />
         <activity android:name=".ui.settings.AboutActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDatesActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateEditActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateDetailActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateAddActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateViewActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateListActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateEditActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateDetailActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDatesActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateEditActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateDetailActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDatesActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateEditActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateDetailActivity" android:exported="false" />
+        <activity android:name=".ui.dates.ImportantDateListActivity" android:exported="false" />
         <activity android:name=".ui.dates.ImportantDatesActivity" android:exported="false" />
 
         <receiver android:name=".notifications.ReminderAlarmReceiver" android:exported="false" />
