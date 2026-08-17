@@ -21,7 +21,7 @@ import com.synthlabs.twohearts.data.repo.ProfileRepository;
 import com.synthlabs.twohearts.data.repo.ReminderRepository;
 import com.synthlabs.twohearts.ui.memories.MemoryListActivity;
 import com.synthlabs.twohearts.ui.notes.NoteListActivity;
-import com.synthlabs.twohearts.ui.timeline.TimelineActivity;
+import com.synthlabs.twohearts.ui.timeline.TimelineListActivity;
 import com.synthlabs.twohearts.ui.places.PlacesActivity;
 
 import java.util.List;
@@ -52,7 +52,7 @@ public class HomeFragment extends Fragment {
 
         btnMemories.setOnClickListener(i -> startActivity(new Intent(getContext(), MemoryListActivity.class)));
         btnNotes.setOnClickListener(i -> startActivity(new Intent(getContext(), NoteListActivity.class)));
-        btnTimeline.setOnClickListener(i -> startActivity(new Intent(getContext(), TimelineActivity.class)));
+        btnTimeline.setOnClickListener(i -> startActivity(new Intent(getContext(), TimelineListActivity.class)));
         btnPlaces.setOnClickListener(i -> startActivity(new Intent(getContext(), PlacesActivity.class)));
 
         loadRelationship();
