@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to TwoHearts"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:layout_marginTop="24dp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="An intimate app built for couples — memories, notes, reminders and playful mini-games to bring you closer. Your data stays private on your device."
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get started"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/tv_learn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learn more"
+            android:textColor="?attr/colorPrimary"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
