@@ -1,14 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="20sp"
-        android:layout_gravity="center"/>
+        android:orientation="vertical">
 
-</FrameLayout>
+        <!-- Relationship greeting -->
+        <TextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:text="Hello, your special someone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Relationship counter / summary -->
+        <TextView
+            android:id="@+id/tv_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:text="Day 0 — 0 days together"
+            android:layout_marginTop="8dp" />
+
+        <!-- Quick actions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_memories"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Memories" />
+
+            <Button
+                android:id="@+id/btn_notes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Notes" />
+
+            <Button
+                android:id="@+id/btn_timeline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Timeline" />
+
+            <Button
+                android:id="@+id/btn_places"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Places" />
+        </LinearLayout>
+
+        <!-- Upcoming reminders header -->
+        <TextView
+            android:id="@+id/tv_reminders_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming reminders"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:layout_marginTop="24dp" />
+
+        <!-- Reminders list placeholder; dynamic list inserted here -->
+        <LinearLayout
+            android:id="@+id/ll_reminders_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- Empty state -->
+        <TextView
+            android:id="@+id/tv_no_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No upcoming reminders"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>
