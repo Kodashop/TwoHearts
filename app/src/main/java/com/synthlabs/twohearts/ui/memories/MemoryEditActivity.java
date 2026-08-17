@@ -33,6 +33,8 @@ public class MemoryEditActivity extends AppCompatActivity {
 
     private Uri pickedUri;
     private MemoryRepository repo = new MemoryRepository();
+    private long memoryId = -1;
+    private Memory memory;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,6 +55,28 @@ public class MemoryEditActivity extends AppCompatActivity {
         });
 
         btnSave.setOnClickListener(v -> onSave());
+
+        // Check for memory_id for edit
+        memoryId = getIntent().getLongExtra("memory_id", -1);
+        if (memoryId > 0) {
+            loadMemoryForEdit();
+        }
+    }
+
+    private void loadMemoryForEdit() {
+        memory = repo.get(memoryId);
+        if (memory == null) return;
+        etTitle.setText(memory.title);
+        etLocation.setText(memory.location);
+        etStory.setText(memory.story);
+        if (memory.photoUri != null && !memory.photoUri.isEmpty()) {
+            try {
+                pickedUri = Uri.parse(memory.photoUri);
+                ivPhoto.setImageURI(pickedUri);
+            } catch (Exception e) {
+                // ignore
+            }
+        }
     }
 
     private void onSave() {
@@ -64,12 +88,13 @@ public class MemoryEditActivity extends AppCompatActivity {
             etTitle.requestFocus();
             return;
         }
-        Memory m = new Memory();
+        Memory m = memory != null ? memory : new Memory();
         m.title = title;
         m.location = TextUtils.isEmpty(location) ? null : location;
         m.story = TextUtils.isEmpty(story) ? null : story;
-        m.date = System.currentTimeMillis();
-        m.photoUri = pickedUri != null ? pickedUri.toString() : null;
+        // Preserve existing date unless this is a new memory
+        if (m.date <= 0) m.date = System.currentTimeMillis();
+        m.photoUri = pickedUri != null ? pickedUri.toString() : m.photoUri;
 
         repo.save(m);
         Toast.makeText(this, "Memory saved", Toast.LENGTH_SHORT).show();

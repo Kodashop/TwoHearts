@@ -1,39 +1,36 @@
-***Memories feature implemented: Home, Add/Edit, Detail, list and persistence***
+***Memory edit-prefill implemented; Notes feature implemented fully (list, add, edit, detail, delete)***
 
 Files added:
-- app/src/main/res/layout/item_reminder.xml (reminder row used by Home)
-- app/src/main/res/layout/activity_memory_list.xml
-- app/src/main/res/layout/item_memory.xml
-- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryAdapter.java
-- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryListActivity.java
-- app/src/main/res/layout/activity_memory_edit.xml
-- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryEditActivity.java
-- app/src/main/res/layout/activity_memory_detail.xml
-- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryDetailActivity.java
+- app/src/main/res/layout/activity_note_edit.xml
+- app/src/main/res/layout/activity_note_list.xml
+- app/src/main/res/layout/item_note.xml
+- app/src/main/res/layout/activity_note_detail.xml
+- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteAdapter.java
+- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteListActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteEditActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteDetailActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryEditActivity.java (updated for edit-prefill)
 
 Files modified:
-- TWOHEARTS_BUILD_PROGRESS.md (appended Memories completion entry)
+- TWOHEARTS_BUILD_PROGRESS.md (appended Memories edit-prefill and Notes completion entries)
 
-What works (functional)
-- Memories Home (MemoryListActivity): lists memories from MemoryRepository.list(FILTER_ALL, null) in a RecyclerView.
-- Empty state: shows a Toast prompt and empty list when no memories exist.
-- Add Memory (MemoryEditActivity): allows user to enter title (required), location, story, pick a photo via ACTION_GET_CONTENT, and save. Saves via MemoryRepository.save(Memory) and returns RESULT_OK to the list.
-- Memory Detail (MemoryDetailActivity): displays title, date, location, story, and photo; supports Edit and Delete.
-- Edit flow: Edit opens MemoryEditActivity with memory_id (note: editing flow currently treats MemoryEditActivity as add-only; if memory_id is provided, it will prefill fields and save update — this will be implemented next if desired).
-- Delete flow: removes memory via MemoryRepository.delete(id) and returns to list.
-- Photo handling: uses Uri string persistence in memory.photoUri and displays via ImageView.setImageURI.
-- Data persistence: all creates/updates/deletes go to local SQLite via MemoryRepository; list reloads after add/edit/delete.
+Memories edit-prefill behavior (done):
+- MemoryEditActivity now checks for intent extra "memory_id". If present, it loads the Memory via MemoryRepository.get(id) and pre-fills title, location, story, and photo.
+- On saving an existing memory, the repository.save(m) updates the row (m.id > 0 path) instead of creating a new record.
+- Existing date preserved if present; only set to now for new records.
+- Photo is preserved unless user picks a replacement.
+- Returns RESULT_OK so MemoryListActivity reloads.
 
-Notes / Implementation details
-- MemoryEditActivity currently implements Add memory. It supports photo picking and saving photo URI in DB. It sets date to current time when saving.
-- MemoryDetailActivity reloads memory in onResume so edits are reflected immediately.
-- MemoryEditActivity returns RESULT_OK so MemoryListActivity reloads in onActivityResult.
-- The MemoryEditActivity supports picking images using ACTION_GET_CONTENT which does not require special filesystem permissions on modern Android — URIs are stored as strings.
+Notes feature (complete):
+- NoteListActivity: RecyclerView list of notes; loads from NoteRepository.list(null)
+- Empty state: Toast prompt when no notes exist; list shows pinned notes first (repository ordering)
+- NoteEditActivity: create a new note or edit an existing one (prefills when note_id provided). Validates title required. Save persists via NoteRepository.save.
+- NoteDetailActivity: shows full note content; Edit button navigates to NoteEditActivity prefilled; Delete removes note with confirmation.
+- All persistence uses NoteRepository; no DB schema changes.
+- Navigation: Home Dashboard quick action for Notes opens NoteListActivity; add/edit/delete flows return RESULT_OK and reload lists.
 
-Genuine blockers
-- None blocking core functionality. All Memories screens are functional and persist real data.
-- If you want MemoryEditActivity to support editing an existing memory (prefilling fields and saving update instead of creating new), I will implement that small enhancement next. Currently Add is complete; Edit navigates into same Activity but prefill flow not coded yet.
+Genuine blockers (none):
+- No blockers for Memories edit or Notes flows. All functionality uses existing repo and DB.
 
-Next steps taken automatically
-- I will implement MemoryEditActivity's edit/prefill capability (small enhancement) so it handles both Add and Edit robustly.
-- After that, I will continue to the next prioritized screen from the RDMap (Notes Home) and implement it fully.
+Next action (automatic):
+- Proceed to the next prioritized incomplete screen from RDMap (likely Timeline Home). I will implement it fully next.
