@@ -1,36 +1,30 @@
-***Memory edit-prefill implemented; Notes feature implemented fully (list, add, edit, detail, delete)***
+***Timeline feature implemented: list, add/edit, detail, delete, date handling***
 
 Files added:
-- app/src/main/res/layout/activity_note_edit.xml
-- app/src/main/res/layout/activity_note_list.xml
-- app/src/main/res/layout/item_note.xml
-- app/src/main/res/layout/activity_note_detail.xml
-- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteAdapter.java
-- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteListActivity.java
-- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteEditActivity.java
-- app/src/main/java/com/synthlabs/twohearts/ui/notes/NoteDetailActivity.java
-- app/src/main/java/com/synthlabs/twohearts/ui/memories/MemoryEditActivity.java (updated for edit-prefill)
+- app/src/main/res/layout/activity_timeline_list.xml
+- app/src/main/res/layout/item_timeline_event.xml
+- app/src/main/res/layout/activity_timeline_edit.xml
+- app/src/main/res/layout/activity_timeline_detail.xml
+- app/src/main/java/com/synthlabs/twohearts/ui/timeline/TimelineAdapter.java
+- app/src/main/java/com/synthlabs/twohearts/ui/timeline/TimelineListActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/timeline/TimelineEditActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/timeline/TimelineDetailActivity.java
 
 Files modified:
-- TWOHEARTS_BUILD_PROGRESS.md (appended Memories edit-prefill and Notes completion entries)
+- TWOHEARTS_BUILD_PROGRESS.md (appended Timeline completion entry)
 
-Memories edit-prefill behavior (done):
-- MemoryEditActivity now checks for intent extra "memory_id". If present, it loads the Memory via MemoryRepository.get(id) and pre-fills title, location, story, and photo.
-- On saving an existing memory, the repository.save(m) updates the row (m.id > 0 path) instead of creating a new record.
-- Existing date preserved if present; only set to now for new records.
-- Photo is preserved unless user picks a replacement.
-- Returns RESULT_OK so MemoryListActivity reloads.
+What works:
+- Timeline Home (TimelineListActivity): lists real TimelineEvent rows from TimelineRepository.list() sorted newest-first.
+- Empty state: Toast prompt and empty list when no events exist.
+- Add Timeline Event (TimelineEditActivity): pick date (DatePicker) required, title required, optional note; saves to DB via TimelineRepository.save(e).
+- Timeline Event Detail: shows long-form date, title, and full note; Edit navigates to edit screen and Delete removes record.
+- Edit: prefill implemented; saving an existing event updates the record (repo.save uses id > 0 path).
+- Delete: removes record and returns to list.
+- Navigation: Home Dashboard quick action for Timeline opens TimelineListActivity; list → detail → edit → save → list refresh works using RESULT_OK and onResume reload.
 
-Notes feature (complete):
-- NoteListActivity: RecyclerView list of notes; loads from NoteRepository.list(null)
-- Empty state: Toast prompt when no notes exist; list shows pinned notes first (repository ordering)
-- NoteEditActivity: create a new note or edit an existing one (prefills when note_id provided). Validates title required. Save persists via NoteRepository.save.
-- NoteDetailActivity: shows full note content; Edit button navigates to NoteEditActivity prefilled; Delete removes note with confirmation.
-- All persistence uses NoteRepository; no DB schema changes.
-- Navigation: Home Dashboard quick action for Notes opens NoteListActivity; add/edit/delete flows return RESULT_OK and reload lists.
+Genuine blockers / caveats:
+- No blockers found. All functions persist to local SQLite via TimelineRepository.
+- No photo/location fields in TimelineEvent model; per specification we used icon (string) and note/date/title. If photo/location is required, schema change would be necessary; avoided per instructions.
 
-Genuine blockers (none):
-- No blockers for Memories edit or Notes flows. All functionality uses existing repo and DB.
-
-Next action (automatic):
-- Proceed to the next prioritized incomplete screen from RDMap (likely Timeline Home). I will implement it fully next.
+Next automatic step:
+- Update TWOHEARTS_BUILD_PROGRESS.md is committed. I will now proceed to the next prioritized feature from the RDMap.
