@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="personalization_theme_options">
+        <item>System default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="personalization_text_scale_options">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra large</item>
+    </string-array>
+</resources>

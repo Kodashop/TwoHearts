@@ -111,9 +111,8 @@ public class RelationshipSetupActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Relationship saved", Toast.LENGTH_SHORT).show();
 
-        // Navigate to MainActivity for now
-        Intent i = new Intent(RelationshipSetupActivity.this, com.synthlabs.twohearts.ui.MainActivity.class);
-        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        // Navigate to Personalization Setup
+        Intent i = new Intent(RelationshipSetupActivity.this, PersonalizationSetupActivity.class);
         startActivity(i);
         finish();
     }

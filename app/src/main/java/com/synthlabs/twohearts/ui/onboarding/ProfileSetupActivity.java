@@ -1,6 +1,5 @@
 package com.synthlabs.twohearts.ui.onboarding;
 
-import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -99,9 +98,8 @@ public class ProfileSetupActivity extends AppCompatActivity {
 
         Toast.makeText(this, "Profile saved", Toast.LENGTH_SHORT).show();
 
-        // Navigate to MainActivity for now; further onboarding screens will be added later.
-        Intent i = new Intent(ProfileSetupActivity.this, com.synthlabs.twohearts.ui.MainActivity.class);
-        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        // Navigate to Relationship Setup
+        Intent i = new Intent(ProfileSetupActivity.this, RelationshipSetupActivity.class);
         startActivity(i);
         finish();
     }
