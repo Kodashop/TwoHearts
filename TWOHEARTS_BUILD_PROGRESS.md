@@ -1,60 +1,27 @@
-# TwoHearts — Build Progress
+Updated UI shell: added MainActivity, SplashActivity, bottom navigation and placeholder fragments for Home/Us/Games/Notes/More. These are the first Phase 1 UI foundation screens to be wired to the existing app architecture.
 
-Native Android app (Java + SQLite, offline-first). This file is the handover
-record: if a build session ends, the next one starts by reading this.
+Files added in this batch:
+- app/src/main/java/com/synthlabs/twohearts/ui/MainActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/splash/SplashActivity.java
+- app/src/main/java/com/synthlabs/twohearts/ui/home/HomeFragment.java
+- app/src/main/java/com/synthlabs/twohearts/ui/us/UsFragment.java
+- app/src/main/java/com/synthlabs/twohearts/ui/games/GamesFragment.java
+- app/src/main/java/com/synthlabs/twohearts/ui/notes/NotesFragment.java
+- app/src/main/java/com/synthlabs/twohearts/ui/more/MoreFragment.java
+- app/src/main/res/layout/activity_main.xml
+- app/src/main/res/layout/activity_splash.xml
+- app/src/main/res/layout/fragment_home.xml
+- app/src/main/res/layout/fragment_us.xml
+- app/src/main/res/layout/fragment_games.xml
+- app/src/main/res/layout/fragment_notes.xml
+- app/src/main/res/layout/fragment_more.xml
+- app/src/main/res/menu/bottom_nav_menu.xml
+- app/src/main/res/values/strings_ui.xml
 
-Repo: `synthlabsdigital-cmyk/2Hearts2` (branch `master`)
-Package: `com.synthlabs.twohearts` · minSdk 24 · targetSdk 34 · Java 17
+Notes:
+- These screens are minimal, placeholder UI that follow the TwoHearts design intent and reuse the existing app theme. They are wired to the existing application class (TwoHeartsApp) and will allow the app to start and navigate between primary destinations.
+- No backend/core systems were modified. Existing repositories and services will be connected when implementing each feature screen.
 
----
-
-## How to get an APK
-
-Push to `master` and the workflow `.github/workflows/android-build.yml` builds
-`app-debug.apk` and uploads it as a build artifact (Actions → latest run →
-Artifacts). No local Android Studio needed.
-
----
-
-## Status by layer
-
-| Layer | State | Notes |
-|---|---|---|
-| Gradle build + CI | Done | root/app `build.gradle`, wrapper props, GitHub Actions APK workflow |
-| Manifest | Done | all activities + 3 receivers declared |
-| Design system (XML) | Done | colors (light/night), dimens, themes, styles, 34 vector icons |
-| Strings | Done | ~317 strings, all user-facing copy centralised |
-| Core (config/theme/text size/lock state/dates) | Done | `core/` |
-| Database + migrations | Done | `data/db/TwoHeartsDatabase.java`, v1 schema, seeded rows |
-| Models | Done | 15 POJOs in `data/model/` |
-| Repositories | Done | profile/dates, memories, notes, timeline, places, mood, reminders, notifications, period, vault, games |
-| Domain logic | Done | `PeriodEngine` (predictions/phases), `MilestoneEngine` (days together) |
-| Security | Done | `CryptoBox` (Keystore AES-GCM), `PinManager` (salted hash in EncryptedSharedPreferences) |
-| Notifications | Done | channels, `Notifier`, `ReminderScheduler` (AlarmManager), alarm/action/boot receivers |
-| UI layouts + activities | **Next** | 77 screens from the reference set, batch by batch |
-
-## UI build order (next sessions)
-
-1. Splash → onboarding (permissions, welcome, profile, relationship, personalization, app lock, story date, complete)
-2. `MainActivity` shell + bottom nav (Home, Us, More) + app lock screen
-3. Memories (list, detail, edit) · Notes (list, edit) · Timeline
-4. Relationship counter · Important dates · Places · Mood
-5. Reminders · Notification centre · Search
-6. Period tracker (setup, home, calendar, log, history, settings, reminders, privacy)
-7. Vault (lock, home, item view/edit)
-8. Games (menu, play, result, stats)
-9. Settings (profile, relationship, appearance, notifications, security, storage, about)
-
-## Owner-editable configuration
-
-- `core/AppConfig.java` — cycle/period defaults, reminder hours, snooze length, milestone days
-- `res/values/strings.xml` — every piece of visible text
-- `res/values/colors.xml` (+ `values-night/`) — the whole palette
-
-## Conventions (keep these)
-
-- UI never touches SQL; it goes through `data/repo/*`.
-- Any new schema change bumps `TwoHeartsDatabase.VERSION` and adds an
-  `onUpgrade` case — never drop tables (owner data must survive updates).
-- Nothing sensitive in plain preferences: PIN → `PinManager`, vault text → `CryptoBox`.
-- Period tracker data stays local to the device.
+Next steps:
+- Verify the project builds locally (./gradlew assembleDebug) and run on a device/emulator.
+- Replace placeholder fragment contents with real UI for Home Dashboard and onboarding in the next incremental batch.
